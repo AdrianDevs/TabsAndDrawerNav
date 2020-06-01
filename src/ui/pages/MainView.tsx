@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, withRouter, useLocation } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 

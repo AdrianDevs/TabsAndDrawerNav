@@ -22,13 +22,7 @@ export const NavTabs: React.FC<RouteProps> = (props): JSX.Element => {
   const location = useLocation();
 
   useEffect(() => {
-    console.log('NavTabs start');
-    console.log(`location path: ${location.pathname}`);
     setValue(Routes.getRouteFromPath(location.pathname).index);
-    return () => {
-      console.log('NavTabs end');
-      console.log(`location: ${location}`);
-    };
   }, [location]);
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
@@ -39,7 +33,6 @@ export const NavTabs: React.FC<RouteProps> = (props): JSX.Element => {
     if (location.pathname !== route.path) {
       history.push(route.path);
     }
-    console.groupEnd();
   };
 
   const list = () => (

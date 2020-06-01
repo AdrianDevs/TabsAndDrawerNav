@@ -1,5 +1,5 @@
-import React, { useCallback, useMemo, SetStateAction } from 'react';
-import { RouteComponentProps, useHistory, useLocation } from 'react-router-dom';
+import React from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 
 import clsx from 'clsx';
 import {
@@ -16,13 +16,10 @@ import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 
 import { RouteProps, Route, Routes } from '../../core/configuration';
 
