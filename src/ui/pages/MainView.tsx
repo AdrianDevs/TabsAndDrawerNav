@@ -1,6 +1,5 @@
-import React, { useEffect, useCallback, useMemo } from 'react';
+import React from 'react';
 import { Route, withRouter, useLocation } from 'react-router-dom';
-import { Typography } from '@material-ui/core';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 
@@ -31,18 +30,6 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const _MainView: React.FC = (): JSX.Element => {
   const classes = useStyles();
-  const location = useLocation();
-
-  useEffect(() => {
-    console.group('Main start');
-    console.log(`location path: ${location.pathname}`);
-    console.log(
-      `location index: ${Routes.getRouteFromPath(location.pathname).index}`
-    );
-    return () => {
-      console.log('Main end');
-    };
-  });
 
   return (
     <div>

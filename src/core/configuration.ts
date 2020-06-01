@@ -1,12 +1,5 @@
 import { type } from 'os';
 
-// export const ROUTES = {
-//   home: '/',
-//   product: 'product',
-//   software: 'software',
-//   hobbies: 'hobbies',
-// };
-
 export interface RouteProps {
   routes: Route[];
 }
